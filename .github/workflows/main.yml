@@ -29,6 +29,7 @@ jobs:
         with:
           # Platform that the build should target.
           targetPlatform: webgl
+          unityVersion: 2021.3.14f1
           # Version of unity to use for building the project. Use "auto" to get from your ProjectSettings/ProjectVersion.txt
           # Specific docker image that should be used for building the project
           buildName: build
