@@ -20,6 +20,7 @@ jobs:
         with:
           # Version of unity to use for building the project.
           unityVersion: 2021.3.14f1
+          path: ./STDgame
 
       - name: Unity - Builder
         # You may pin to the exact commit or the version.
