@@ -12,20 +12,7 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      
-      - name: Unity - Request Activation File
-        # You may pin to the exact commit or the version.
-        # uses: game-ci/unity-request-activation-file@2338dd09663a155e2fc6a45511330c90f11af1ca
-        uses: game-ci/unity-request-activation-file@v2.0.0
-        with:
-          # Version of unity to use for building the project.
-          unityVersion: 2021.3.14f1
-      - name: Set license variable
-        run: echo ./2021.3.14f1.alf >> $UNITY_LICENSE
-        
-      - name: debug 
-        run: echo $UNITY_LICENSE
-    
+
       - name: Unity - Builder
         # You may pin to the exact commit or the version.
         # uses: game-ci/unity-builder@9f79830454d37cd9e70c4c3b73d26c06bcce2b2a
