@@ -32,6 +32,7 @@ jobs:
           # Specific docker image that should be used for building the project
           buildName: build
           projectPath: ./STDgame
+          allowDirtyBuild: true
           
 
       - name: Deploy 🚀
