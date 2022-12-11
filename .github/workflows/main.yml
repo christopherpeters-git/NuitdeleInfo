@@ -20,8 +20,12 @@ jobs:
         with:
           # Version of unity to use for building the project.
           unityVersion: 2021.3.14f1
-          path: ./STDgame
-
+      - name: Set license variable
+        run: echo ./2021.3.14f1.alf >> $UNITY_LICENSE
+        
+      - name: debug 
+        run: echo $UNITY_LICENSE
+    
       - name: Unity - Builder
         # You may pin to the exact commit or the version.
         # uses: game-ci/unity-builder@9f79830454d37cd9e70c4c3b73d26c06bcce2b2a
